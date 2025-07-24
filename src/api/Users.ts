@@ -13,7 +13,7 @@ const useUsersApi = () => {
     perPage: 6
   });
 
-  const fetchUsers = useCallback(async (page: number = 1) => {
+  const fetchUsers = useCallback(async (page: number) => {
     setLoading(true);
     setError(null);
     setUsingFallback(false);
