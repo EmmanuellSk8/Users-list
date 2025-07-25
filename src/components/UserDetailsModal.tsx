@@ -11,7 +11,7 @@ const UserDetailsModal = ({isOpen, onClose, user}: UserDetailModal) => {
                 <X className="absolute top-4 right-4 cursor-pointer" />
               </button>
                 <h1 className="text-3xl font-bold text-nowrap text-center">Detalles del usuario</h1>
-                <img src={user.avatar} alt={user.first_name + user.last_name} className="size-24 rounded-full object-contain aspect-square my-6" />
+                <img src={user.avatar} alt={user.first_name + " " + user.last_name} className="size-24 rounded-full object-contain aspect-square my-6" />
                
                 <div className="w-96 flex flex-col gap-6">
 
@@ -19,7 +19,7 @@ const UserDetailsModal = ({isOpen, onClose, user}: UserDetailModal) => {
                         <User2 className="size-6 text-gray-500" />
                         <div className="flex flex-col">
                             <p className="text-gray-500">Nombre completo</p>
-                            <p className="font-semibold">{user.first_name + user.last_name}</p>
+                            <p className="font-semibold">{user.first_name + " " + user.last_name}</p>
                         </div>
                     </div>
                     <div className="flex bg-gray-100 w-full items-center gap-3 py-1 px-2 rounded-lg">
