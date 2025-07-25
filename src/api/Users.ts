@@ -32,7 +32,7 @@ const useUsersApi = () => {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-            "User-Agent": "React-App",
+            "x-api-key": "reqres-free-v1",
           },
           signal: controller.signal
         });

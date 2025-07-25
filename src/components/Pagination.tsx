@@ -12,14 +12,14 @@ const Pagination = ({ currentPage, onPageChange, totalPages, loading }: TypePagi
             >
                 <ChevronLeft /> Anterior
             </button>
-            <span className="text-lg">{`Page ${currentPage} of ${totalPages}`}</span>
+           
             <div className="flex gap-2">
 
                 {pages.map((page) => (
                     <button
                         key={page}
                         onClick={() => onPageChange(page)}
-                        className={`px-3 py-1 rounded-md ${currentPage === page ? 'bg-blue-600 text-white' : 'bg-white border-1 border-gray-300 hover:bg-gray-100'}`}
+                        className={`px-4 py-2 rounded-md font-semibold ${currentPage === page ? 'bg-black text-white' : 'bg-white border-1 border-gray-300 hover:bg-gray-100'}`}
                     >
                         {page}
                     </button>
